@@ -5,6 +5,7 @@ const fs = require('fs');
 const generateMarkdown = ({title, Description, TableOfContents, Installation, Usages, Contribution, Tests, Questions}) =>
 `
 `;
+//paste created README here including ${description} ${tableOfContents} {installation} ${usages} ${contribution} ${tests} ${questions} in the back ticks
 // TODO: Create an array of questions for user input
 const questions = [
   {
