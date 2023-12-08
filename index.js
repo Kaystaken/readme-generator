@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
-const inquier = require('inquirer');
+const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateMarkdown = ({title, Description, TableOfContents, Installation, Usages, Contribution, Tests, Questions}) =>
+const generateMarkdown = ({title, description, tableOfContents, installation, usages, contribution, tests, questions}) =>
 `
 `;
 //paste created README here including ${description} ${tableOfContents} {installation} ${usages} ${contribution} ${tests} ${questions} in the back ticks
@@ -11,7 +11,7 @@ const questions = [
   {
     type: 'prompt',
     name: 'title',
-    message: 'What is the app called?',
+    message: 'Choose a self-explaining name for your app',
   },
 {
   type: 'prompt',
@@ -36,7 +36,7 @@ const questions = [
 {
   type: 'prompt',
   name: 'contributions',
-  message: 'Contribution Guidelines',
+  message: 'Contribution Guidelines. State if you are open to contributions and what your requirements are for accepting them.',
 },
 {
   type: 'prompt',
@@ -49,8 +49,8 @@ const questions = [
   message: 'Please Enter GitHub Username',
 },
 ];
-inquirer
-  .prompt(questions)
+function init () {
+inquirer.prompt(questions)
   .then((answers) => {
     const readmeContent = generateMarkdown(answers);
     fs.writeToFile('README.md', readmeContent);
@@ -59,5 +59,4 @@ inquirer
     console.log(error)
   });
 // TODO: Create a function to write README file
-
-//paste README here and ${description} ${tableOfContents} {installation} ${usages} ${contribution} ${tests} ${questions}
+}
