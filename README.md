@@ -14,7 +14,7 @@ You can quickly and easily create a README file by using a command-line applicat
 
 ### Problem Solved
 
-Using this README generatot allows the project creator to devote more time to working on the project.
+Using this README generator allows the project creator to devote more time to working on the project.
 
 ### Learnings
 

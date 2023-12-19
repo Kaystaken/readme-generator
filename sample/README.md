@@ -3,56 +3,20 @@
 
 ##tableOfContents
 
-description
+#Description
 
-installation
+##Installation
 
-usages 
+##Usage 
 
-contribution
+##Licenses
 
-tests
+##Technologies
+
+##Contributing
+
+##Test
  
-questions 
-
-description
-
-README generator
-
-installation
-
-usages 
-
-contribution
-
-tests
- 
-questions
+##Questions 
 
 
-
-##description
-
-##installation
-
-##usages 
-
-##contribution
-
-##tests
- 
-##questions 
-
-##description
-
-##README generator
-
-##installation
-
-##usages 
-
-##contribution
-
-##tests
- 
-##questions
