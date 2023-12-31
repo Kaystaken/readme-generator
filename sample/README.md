@@ -1,22 +1,24 @@
-###title
+### Title
 # readme-generator
 
-##tableOfContents
+## TableOfContents
 
-#Description
+# Description
 
-##Installation
+## Installation
 
-##Usage 
+## Usage 
 
-##Licenses
+## Licenses
 
-##Technologies
+## Credits
 
-##Contributing
+## Technologies
 
-##Test
+## Contributing
+
+## Test
  
-##Questions 
+## Questions and Repository
 
 
