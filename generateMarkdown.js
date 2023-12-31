@@ -9,13 +9,13 @@ function renderDescriptionSection(description) {
 
 function renderTableOfContents() {
   // Installation, Usage, License, Contributing, Tests, and Questions
-  return `## Table of Contents:\n
-    - [Installation](#Installation)\n
-    - [Usage](#Usage)\n
-    - [License](#License)\n
-    - [Contributing](#Contributing)\n
-    - [Tests](#Tests)\n
-    - [Questions](#Questions)\n`;
+  return `## Table of Contents:
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)\n`;
 }
 
 function renderBasicSection(name, details) {
@@ -53,17 +53,27 @@ function renderLicenseBadge(license) {
 
 // Function that returns the license section of README
 function renderLicenseSection(license) {
-  return `## License\n${renderLicenseLink(license)}\n`;
+  return `## License\n${renderLicenseBadge(license)}\n`;
 }
 
 function renderQuestionsSection(github, email) {
-  return `## Questions\n
-    If there are any questions, please check my [Github profile](https://www.github.com/${github})\n
-    Or email me at ${email}\n`;
-}
-//Function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}`;
+  return `## Questions
+If there are any questions, please check my [Github profile](https://www.github.com/${github})
+Or email me at [${email}](mailto:${email})`;
 }
 
-module.exports = { generateMarkdown, renderTitleSection, renderDescriptionSection, renderTableOfContents, renderBasicSection, renderLicenseSection, renderQuestionsSection };
+//Function to generate markdown for README
+function generateMarkdown({ title, description, installation, usage, contributing, tests, license, github, email }) {
+  const titleSection = renderTitleSection(title, license);
+  const descriptionSection = renderDescriptionSection(description);
+  const tableOfContents = renderTableOfContents();
+  const licenseSection = renderLicenseSection(license);
+  const questionsSection = renderQuestionsSection(github, email);
+
+  return titleSection + descriptionSection + tableOfContents +
+    renderBasicSection('Installation', installation) + renderBasicSection('Usage', usage) +
+    licenseSection + renderBasicSection('Contributing', contributing) + renderBasicSection('Tests', tests) +
+    questionsSection;
+}
+
+module.exports = { generateMarkdown };
