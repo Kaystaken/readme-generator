@@ -19,9 +19,9 @@ Using this README generator allows the project creator to devote more time to wo
 
 ## Installation
 
-Here's how you can make a Professional README Generator on your local machine:
+Here's how you can use this Professional README Generator on your local machine:
 
-- git clone https://github.com/yourusername/your-repo.git
+- git clone https://github.com/Kaystaken/readme-generator.git
 - npm install inquirer@8.2.4
 - node index.js
 
@@ -33,7 +33,10 @@ Enter your project title, description, installation instructions, usage informat
 Choose a license for your application from the provided options.
 Generates to sample folder, check out the demonstration link below
 
- DEMO:
+Sample README:
+ ![Preview of README](<Screenshot 2023-12-31 at 12.46.36 PM.png>)
+Walkthrough Video:
+  https://drive.google.com/file/d/1JgBZxBUvfofCmAx2RL1cmsX6R2dKpKz0/view?usp=sharing
 
  GITHUB REPO: https://github.com/Kaystaken/readme-generator
 
