@@ -37,12 +37,12 @@ module.exports = [
   },
   {
     type: 'input',
-    name: 'questions',
-    message: 'If there are any questions leave your email address for them to reach you'
+    name: 'github',
+    message: 'If there are any questions leave your Github profile for them to reach you',
   },
   {
     type: 'input',
-    name: 'repository',
-    message: 'Please Enter GitHub Username and link to your page',
-  },
+    name: 'email',
+    message: 'If there are any questions leave your email address for them to reach you'
+  }
 ];
